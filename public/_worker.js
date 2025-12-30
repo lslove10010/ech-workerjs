@@ -1,1 +1,187 @@
-function _0x5a6c(){const _0xf7566c=['toLowerCase','writable','error','readable','websocket','get','data','write','fetch','CONNECTED','cloudflare','values','DATA:','addEventListener','opened','Worker\x20fetch\x20error:','5442208HziBCm','substring','1354230ngTAli','releaseLock','ASSETS','byteLength','lastIndexOf','13743621dEoBgx','Sec-WebSocket-Protocol','encode','3023292qMraFi','length','ERROR:','indexOf','CLOSE','Unauthorized','21085eLEzTt','readyState','string','Internal\x20Server\x20Error:\x20','nodejs_compat','77973eEjFTE','send','close','startsWith','read','46991730JmMGru','25cmGbkl','headers','proxy\x20request','Upgrade','message','includes','140qEhHwj','984QsVGQo','catch'];_0x5a6c=function(){return _0xf7566c;};return _0x5a6c();}function _0x26e3(_0x20df5e,_0x19cb0b){const _0x5a6c2f=_0x5a6c();return _0x26e3=function(_0x26e3cd,_0x587daf){_0x26e3cd=_0x26e3cd-0x147;let _0x3487ee=_0x5a6c2f[_0x26e3cd];return _0x3487ee;},_0x26e3(_0x20df5e,_0x19cb0b);}const _0x4cd569=_0x26e3;(function(_0x535a62,_0x31158b){const _0x46a957=_0x26e3,_0x1bf49b=_0x535a62();while(!![]){try{const _0x570726=parseInt(_0x46a957(0x173))/0x1*(parseInt(_0x46a957(0x150))/0x2)+parseInt(_0x46a957(0x16d))/0x3+parseInt(_0x46a957(0x163))/0x4+-parseInt(_0x46a957(0x14a))/0x5*(parseInt(_0x46a957(0x165))/0x6)+-parseInt(_0x46a957(0x178))/0x7*(-parseInt(_0x46a957(0x151))/0x8)+parseInt(_0x46a957(0x16a))/0x9+-parseInt(_0x46a957(0x149))/0xa;if(_0x570726===_0x31158b)break;else _0x1bf49b['push'](_0x1bf49b['shift']());}catch(_0x3b2a93){_0x1bf49b['push'](_0x1bf49b['shift']());}}}(_0x5a6c,0xdf146));const WS_READY_STATE_OPEN=0x1,WS_READY_STATE_CLOSING=0x2,CF_FALLBACK_IPS=['ProxyIP.CMLiussss.net'],encoder=new TextEncoder();import{connect}from'cloudflare:sockets';export default{async 'fetch'(_0x3cc991,_0x3875a8,_0x3fe794){const _0x424f82=_0x26e3;try{const _0xf989a4=_0x3875a8['TOKEN']||'jkmbb',_0x19b835=_0x3cc991[_0x424f82(0x14b)][_0x424f82(0x158)](_0x424f82(0x14d));if(!_0x19b835||_0x19b835[_0x424f82(0x153)]()!==_0x424f82(0x157))return await _0x3875a8[_0x424f82(0x167)][_0x424f82(0x15b)](_0x3cc991);if(_0xf989a4&&_0x3cc991[_0x424f82(0x14b)][_0x424f82(0x158)](_0x424f82(0x16b))!==_0xf989a4)return new Response(_0x424f82(0x172),{'status':0x191});const [_0x2a7aa3,_0x99c91c]=Object[_0x424f82(0x15e)](new WebSocketPair());_0x99c91c['accept'](),handleSession(_0x99c91c)[_0x424f82(0x152)](()=>safeCloseWebSocket(_0x99c91c));const _0x43fc9b={'status':0x65,'webSocket':_0x2a7aa3};return _0xf989a4&&(_0x43fc9b['headers']={'Sec-WebSocket-Protocol':_0xf989a4}),new Response(null,_0x43fc9b);}catch(_0x5ddef4){return console[_0x424f82(0x155)](_0x424f82(0x162),_0x5ddef4['message']||_0x5ddef4),new Response(_0x424f82(0x176)+(_0x5ddef4[_0x424f82(0x14e)]||_0x5ddef4),{'status':0x1f4});}}};async function handleSession(_0x443f9b){const _0x2da5ba=_0x26e3;let _0x3f6380,_0x498e44,_0x4705ab,_0x4c1c73=![];const _0x11f146=()=>{const _0x4fc11f=_0x26e3;if(_0x4c1c73)return;_0x4c1c73=!![];try{_0x498e44?.[_0x4fc11f(0x166)]();}catch{}try{_0x4705ab?.['releaseLock']();}catch{}try{_0x3f6380?.[_0x4fc11f(0x17a)]();}catch{}_0x498e44=_0x4705ab=_0x3f6380=null,safeCloseWebSocket(_0x443f9b);},_0x41eeeb=async()=>{const _0x401024=_0x26e3;try{while(!_0x4c1c73&&_0x4705ab){const {done:_0x4a1701,value:_0x9d6246}=await _0x4705ab[_0x401024(0x148)]();if(_0x4a1701)break;if(_0x443f9b[_0x401024(0x174)]!==WS_READY_STATE_OPEN)break;if(_0x9d6246?.[_0x401024(0x168)]>0x0)_0x443f9b[_0x401024(0x179)](_0x9d6246);}}catch{}if(!_0x4c1c73){try{_0x443f9b[_0x401024(0x179)](_0x401024(0x171));}catch{}_0x11f146();}},_0x4014d8=_0x562352=>{const _0x351cf0=_0x26e3;if(_0x562352[0x0]==='['){const _0x22b3de=_0x562352['indexOf'](']');return{'host':_0x562352['substring'](0x1,_0x22b3de),'port':parseInt(_0x562352[_0x351cf0(0x164)](_0x22b3de+0x2),0xa)};}const _0x596b6c=_0x562352[_0x351cf0(0x169)](':');return{'host':_0x562352[_0x351cf0(0x164)](0x0,_0x596b6c),'port':parseInt(_0x562352[_0x351cf0(0x164)](_0x596b6c+0x1),0xa)};},_0x5f2bf5=_0x56dde4=>{const _0x3f613f=_0x26e3,_0x2fe2bf=_0x56dde4?.[_0x3f613f(0x14e)]?.[_0x3f613f(0x153)]()||'';return _0x2fe2bf[_0x3f613f(0x14f)](_0x3f613f(0x14c))||_0x2fe2bf[_0x3f613f(0x14f)]('cannot\x20connect')||_0x2fe2bf['includes'](_0x3f613f(0x15d));},_0xd35d58=async(_0x12ff9b,_0x4c8e53)=>{const _0x5bfaa8=_0x26e3,{host:_0x55bdc8,port:_0x4e159f}=_0x4014d8(_0x12ff9b),_0xd6581d=[null,...CF_FALLBACK_IPS];for(let _0x4005b5=0x0;_0x4005b5<_0xd6581d[_0x5bfaa8(0x16e)];_0x4005b5++){try{_0x3f6380=connect({'hostname':_0xd6581d[_0x4005b5]||_0x55bdc8,'port':_0x4e159f});if(_0x3f6380[_0x5bfaa8(0x161)])await _0x3f6380[_0x5bfaa8(0x161)];_0x498e44=_0x3f6380[_0x5bfaa8(0x154)]['getWriter'](),_0x4705ab=_0x3f6380[_0x5bfaa8(0x156)]['getReader']();_0x4c8e53&&await _0x498e44[_0x5bfaa8(0x15a)](encoder[_0x5bfaa8(0x16c)](_0x4c8e53));_0x443f9b['send'](_0x5bfaa8(0x15c)),_0x41eeeb();return;}catch(_0x5a3358){try{_0x498e44?.[_0x5bfaa8(0x166)]();}catch{}try{_0x4705ab?.[_0x5bfaa8(0x166)]();}catch{}try{_0x3f6380?.[_0x5bfaa8(0x17a)]();}catch{}_0x498e44=_0x4705ab=_0x3f6380=null;if(!_0x5f2bf5(_0x5a3358)||_0x4005b5===_0xd6581d[_0x5bfaa8(0x16e)]-0x1)throw _0x5a3358;}}};_0x443f9b[_0x2da5ba(0x160)](_0x2da5ba(0x14e),async _0x370842=>{const _0x1680b3=_0x2da5ba;if(_0x4c1c73)return;try{const _0x529fee=_0x370842[_0x1680b3(0x159)];if(typeof _0x529fee===_0x1680b3(0x175)){if(_0x529fee[_0x1680b3(0x147)]('CONNECT:')){const _0x58222c=_0x529fee[_0x1680b3(0x170)]('|',0x8);await _0xd35d58(_0x529fee['substring'](0x8,_0x58222c),_0x529fee[_0x1680b3(0x164)](_0x58222c+0x1));}else{if(_0x529fee[_0x1680b3(0x147)](_0x1680b3(0x15f)))_0x498e44&&await _0x498e44[_0x1680b3(0x15a)](encoder['encode'](_0x529fee['substring'](0x5)));else _0x529fee===_0x1680b3(0x171)&&_0x11f146();}}else _0x529fee instanceof ArrayBuffer&&_0x498e44&&await _0x498e44[_0x1680b3(0x15a)](new Uint8Array(_0x529fee));}catch(_0x50eb36){try{_0x443f9b[_0x1680b3(0x179)](_0x1680b3(0x16f)+_0x50eb36[_0x1680b3(0x14e)]);}catch{}_0x11f146();}}),_0x443f9b['addEventListener'](_0x2da5ba(0x17a),_0x11f146),_0x443f9b[_0x2da5ba(0x160)]('error',_0x11f146);}function safeCloseWebSocket(_0x2eb333){const _0x3e21eb=_0x26e3;try{(_0x2eb333[_0x3e21eb(0x174)]===WS_READY_STATE_OPEN||_0x2eb333['readyState']===WS_READY_STATE_CLOSING)&&_0x2eb333[_0x3e21eb(0x17a)](0x3e8,'Server\x20closed');}catch{}}export const config={'runtime':_0x4cd569(0x177)};
+const WS_READY_STATE_OPEN = 1;
+const WS_READY_STATE_CLOSING = 2;
+const CF_FALLBACK_IPS = ['ProxyIP.CMLiussss.net'];// cm维护
+
+// 复用 TextEncoder，避免重复创建
+const encoder = new TextEncoder();
+
+import { connect } from 'cloudflare:sockets';
+
+export default {
+  async fetch(request, env, ctx) {
+    try {
+      const token = 'jkmmbb';
+      const upgradeHeader = request.headers.get('Upgrade');
+      
+      if (!upgradeHeader || upgradeHeader.toLowerCase() !== 'websocket') {
+        return new URL(request.url).pathname === '/public' 
+          ? new Response('WebSocket Proxy Server', { status: 200 })
+          : new Response('Expected WebSocket', { status: 426 });
+      }
+
+      if (token && request.headers.get('Sec-WebSocket-Protocol') !== token) {
+        return new Response('Unauthorized', { status: 401 });
+      }
+
+      const [client, server] = Object.values(new WebSocketPair());
+      server.accept();
+      
+      handleSession(server).catch(() => safeCloseWebSocket(server));
+
+      // 修复 spread 类型错误
+      const responseInit = {
+        status: 101,
+        webSocket: client
+      };
+      
+      if (token) {
+        responseInit.headers = { 'Sec-WebSocket-Protocol': token };
+      }
+
+      return new Response(null, responseInit);
+      
+    } catch (err) {
+      return new Response(err.toString(), { status: 500 });
+    }
+  },
+};
+
+async function handleSession(webSocket) {
+  let remoteSocket, remoteWriter, remoteReader;
+  let isClosed = false;
+
+  const cleanup = () => {
+    if (isClosed) return;
+    isClosed = true;
+    
+    try { remoteWriter?.releaseLock(); } catch {}
+    try { remoteReader?.releaseLock(); } catch {}
+    try { remoteSocket?.close(); } catch {}
+    
+    remoteWriter = remoteReader = remoteSocket = null;
+    safeCloseWebSocket(webSocket);
+  };
+
+  const pumpRemoteToWebSocket = async () => {
+    try {
+      while (!isClosed && remoteReader) {
+        const { done, value } = await remoteReader.read();
+        
+        if (done) break;
+        if (webSocket.readyState !== WS_READY_STATE_OPEN) break;
+        if (value?.byteLength > 0) webSocket.send(value);
+      }
+    } catch {}
+    
+    if (!isClosed) {
+      try { webSocket.send('CLOSE'); } catch {}
+      cleanup();
+    }
+  };
+
+  const parseAddress = (addr) => {
+    if (addr[0] === '[') {
+      const end = addr.indexOf(']');
+      return {
+        host: addr.substring(1, end),
+        port: parseInt(addr.substring(end + 2), 10)
+      };
+    }
+    const sep = addr.lastIndexOf(':');
+    return {
+      host: addr.substring(0, sep),
+      port: parseInt(addr.substring(sep + 1), 10)
+    };
+  };
+
+  const isCFError = (err) => {
+    const msg = err?.message?.toLowerCase() || '';
+    return msg.includes('proxy request') || 
+           msg.includes('cannot connect') || 
+           msg.includes('cloudflare');
+  };
+
+  const connectToRemote = async (targetAddr, firstFrameData) => {
+    const { host, port } = parseAddress(targetAddr);
+    const attempts = [null, ...CF_FALLBACK_IPS];
+
+    for (let i = 0; i < attempts.length; i++) {
+      try {
+        remoteSocket = connect({
+          hostname: attempts[i] || host,
+          port
+        });
+
+        if (remoteSocket.opened) await remoteSocket.opened;
+
+        remoteWriter = remoteSocket.writable.getWriter();
+        remoteReader = remoteSocket.readable.getReader();
+
+        // 发送首帧数据
+        if (firstFrameData) {
+          await remoteWriter.write(encoder.encode(firstFrameData));
+        }
+
+        webSocket.send('CONNECTED');
+        pumpRemoteToWebSocket();
+        return;
+
+      } catch (err) {
+        // 清理失败的连接
+        try { remoteWriter?.releaseLock(); } catch {}
+        try { remoteReader?.releaseLock(); } catch {}
+        try { remoteSocket?.close(); } catch {}
+        remoteWriter = remoteReader = remoteSocket = null;
+
+        // 如果不是 CF 错误或已是最后尝试，抛出错误
+        if (!isCFError(err) || i === attempts.length - 1) {
+          throw err;
+        }
+      }
+    }
+  };
+
+  webSocket.addEventListener('message', async (event) => {
+    if (isClosed) return;
+
+    try {
+      const data = event.data;
+
+      if (typeof data === 'string') {
+        if (data.startsWith('CONNECT:')) {
+          const sep = data.indexOf('|', 8);
+          await connectToRemote(
+            data.substring(8, sep),
+            data.substring(sep + 1)
+          );
+        }
+        else if (data.startsWith('DATA:')) {
+          if (remoteWriter) {
+            await remoteWriter.write(encoder.encode(data.substring(5)));
+          }
+        }
+        else if (data === 'CLOSE') {
+          cleanup();
+        }
+      }
+      else if (data instanceof ArrayBuffer && remoteWriter) {
+        await remoteWriter.write(new Uint8Array(data));
+      }
+    } catch (err) {
+      try { webSocket.send('ERROR:' + err.message); } catch {}
+      cleanup();
+    }
+  });
+
+  webSocket.addEventListener('close', cleanup);
+  webSocket.addEventListener('error', cleanup);
+}
+
+function safeCloseWebSocket(ws) {
+  try {
+    if (ws.readyState === WS_READY_STATE_OPEN || 
+        ws.readyState === WS_READY_STATE_CLOSING) {
+      ws.close(1000, 'Server closed');
+    }
+  } catch {}
+}
