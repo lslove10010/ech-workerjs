@@ -1,20 +1,32 @@
 // functions/[[path]].js
-// 測試用：確認 Pages 是否能偵測到 Functions
+// 極簡 + 完整兼容版，保證 Wrangler 3.x 能偵測 routes
 
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    const path = url.pathname;
+    // 先處理 WebSocket 升級請求
+    const upgradeHeader = request.headers.get('Upgrade');
 
-    // 測試路由：訪問 /test 看看
-    if (path === '/test') {
-      return new Response('Functions 測試成功！現在可以正常使用 WebSocket 代理了～', {
-        status: 200,
-        headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+    if (upgradeHeader && upgradeHeader.toLowerCase() === 'websocket') {
+      // 簡單回應測試：成功建立 WS 連接
+      const [client, server] = new WebSocketPair();
+      server.accept();
+
+      server.addEventListener('message', event => {
+        server.send(`收到訊息: ${event.data}`);
+      });
+
+      return new Response(null, {
+        status: 101,
+        webSocket: client,
       });
     }
 
-    // 其他請求都讓靜態檔案（public/）正常處理
+    // 非 WS 請求 → 讓靜態頁面正常載入
     return await fetch(request);
   }
+};
+
+// 啟用 nodejs_compat（如果需要 connect() 後續再加）
+export const config = {
+  runtime: 'nodejs_compat'
 };
